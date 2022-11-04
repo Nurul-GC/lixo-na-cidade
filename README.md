@@ -1,6 +1,6 @@
-# Metodologia Investigação Científica
+# Trabalho para cadeira de Metodologia Investigação Científica
 
-## Problema Investigação:
+### Problema Investigação:
 
 - Lixo em Angola;
 
