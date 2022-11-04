@@ -30,6 +30,13 @@
 - Usar meios tecnológicos para resolução do problema;
 - Concencializar a comunidade sobre a praticabilidade e eficácia das tecnologias na resolução de problemas quotidianos (semelhantes);
 
+### Demonstração do software gestor de postos
+
+`pagina principal com postos vazios`
+![demonstracao-1](img/demo1.png) \
+`pagina principal com postos carregados`
+![demonstracao-2](img/demo2.png)
+
 ---
 
 <div align="center">
