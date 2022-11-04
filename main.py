@@ -32,26 +32,45 @@ class LixoNaCidade:
             if _local:
                 pass
             else:
-                label1.setText(f"Posto\n{self.bairros[0]}\n\n{self.postos[self.bairros[0]]=0}kg")
-                label2.setText(f"Posto\n{self.bairros[1]}\n\n{self.postos[self.bairros[1]]=0}kg")
-                label3.setText(f"Posto\n{self.bairros[2]}\n\n{self.postos[self.bairros[2]]=0}kg")
-                label4.setText(f"Posto\n{self.bairros[3]}\n\n{self.postos[self.bairros[3]]=0}kg")
-                label5.setText(f"Posto\n{self.bairros[4]}\n\n{self.postos[self.bairros[4]]=0}kg")
-                label6.setText(f"Posto\n{self.bairros[5]}\n\n{self.postos[self.bairros[5]]=0}kg")
-                label7.setText(f"Posto\n{self.bairros[6]}\n\n{self.postos[self.bairros[6]]=0}kg")
-                label8.setText(f"Posto\n{self.bairros[7]}\n\n{self.postos[self.bairros[7]]=0}kg")
+                label1.setText(f"Posto\n{self.bairros[0]}\n\n{self.postos[self.bairros[0]]}kg")
+                label2.setText(f"Posto\n{self.bairros[1]}\n\n{self.postos[self.bairros[1]]}kg")
+                label3.setText(f"Posto\n{self.bairros[2]}\n\n{self.postos[self.bairros[2]]}kg")
+                label4.setText(f"Posto\n{self.bairros[3]}\n\n{self.postos[self.bairros[3]]}kg")
+                label5.setText(f"Posto\n{self.bairros[4]}\n\n{self.postos[self.bairros[4]]}kg")
+                label6.setText(f"Posto\n{self.bairros[5]}\n\n{self.postos[self.bairros[5]]}kg")
+                label7.setText(f"Posto\n{self.bairros[6]}\n\n{self.postos[self.bairros[6]]}kg")
+                label8.setText(f"Posto\n{self.bairros[7]}\n\n{self.postos[self.bairros[7]]}kg")
             layout.update()
 
         def carregarpostos():
-            label1.setText(f"Posto\n{self.bairros[0]}\n\n{self.postos[self.bairros[0]]=randint(1, 50)}kg")
-            label2.setText(f"Posto\n{self.bairros[1]}\n\n{self.postos[self.bairros[1]]=randint(1, 50)}kg")
-            label3.setText(f"Posto\n{self.bairros[2]}\n\n{self.postos[self.bairros[2]]=randint(1, 50)}kg")
-            label4.setText(f"Posto\n{self.bairros[3]}\n\n{self.postos[self.bairros[3]]=randint(1, 50)}kg")
-            label5.setText(f"Posto\n{self.bairros[4]}\n\n{self.postos[self.bairros[4]]=randint(1, 50)}kg")
-            label6.setText(f"Posto\n{self.bairros[5]}\n\n{self.postos[self.bairros[5]]=randint(1, 50)}kg")
-            label7.setText(f"Posto\n{self.bairros[6]}\n\n{self.postos[self.bairros[6]]=randint(1, 50)}kg")
-            label8.setText(f"Posto\n{self.bairros[7]}\n\n{self.postos[self.bairros[7]]=randint(1, 50)}kg")
+            label1.setText(f"Posto\n{self.bairros[0]}\n\n{self.postos[self.bairros[0]]+randint(1, 100)}kg")
+            label2.setText(f"Posto\n{self.bairros[1]}\n\n{self.postos[self.bairros[1]]+randint(1, 100)}kg")
+            label3.setText(f"Posto\n{self.bairros[2]}\n\n{self.postos[self.bairros[2]]+randint(1, 100)}kg")
+            label4.setText(f"Posto\n{self.bairros[3]}\n\n{self.postos[self.bairros[3]]+randint(1, 100)}kg")
+            label5.setText(f"Posto\n{self.bairros[4]}\n\n{self.postos[self.bairros[4]]+randint(1, 100)}kg")
+            label6.setText(f"Posto\n{self.bairros[5]}\n\n{self.postos[self.bairros[5]]+randint(1, 100)}kg")
+            label7.setText(f"Posto\n{self.bairros[6]}\n\n{self.postos[self.bairros[6]]+randint(1, 100)}kg")
+            label8.setText(f"Posto\n{self.bairros[7]}\n\n{self.postos[self.bairros[7]]+randint(1, 100)}kg")
             layout.update()
+            postocheio()
+
+        def postocheio():
+            if self.postos[self.bairros[0]] > 50:
+                label1.setStyleSheet("background-color: red;")
+            elif self.postos[self.bairros[1]] > 50:
+                label1.setStyleSheet("background-color: red;")
+            elif self.postos[self.bairros[2]] > 50:
+                label1.setStyleSheet("background-color: red;")
+            elif self.postos[self.bairros[3]] > 50:
+                label1.setStyleSheet("background-color: red;")
+            elif self.postos[self.bairros[4]] > 50:
+                label1.setStyleSheet("background-color: red;")
+            elif self.postos[self.bairros[5]] > 50:
+                label1.setStyleSheet("background-color: red;")
+            elif self.postos[self.bairros[6]] > 50:
+                label1.setStyleSheet("background-color: red;")
+            elif self.postos[self.bairros[7]] > 50:
+                label1.setStyleSheet("background-color: red;")
 
         layout = QVBoxLayout()
         layout.setSpacing(10)
