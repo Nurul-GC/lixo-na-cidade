@@ -1,0 +1,41 @@
+QWidget{
+  font-family: "cambria";
+  background-color: "#EDB";
+  color: black;
+}
+QFrame{
+  border-radius: 10px;
+  background-color: "white";
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  color: black;
+  padding: 5px;
+  margin: auto;
+}
+QPushButton{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+}
+QPushButton:hover{
+  background-color: "#EDB";
+  color: black;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+}
+QMenuBar::item:selected {
+  background-color: white;
+  color: black;
+}
+QMenu::item:selected{
+  background-color: white;
+  color: black;
+}
