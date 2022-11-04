@@ -2,6 +2,7 @@ from random import randint
 from sys import argv
 
 from PyQt6.QtCore import *
+from PyQt6.QtGui import *
 from PyQt6.QtWidgets import *
 
 
@@ -20,8 +21,8 @@ class LixoNaCidade:
 
         self.app = QApplication(argv)
         self.ferramentas = QWidget()
+        self.ferramentas.setWindowIcon(QIcon("favicon/favicon-512x512.png"))
         self.ferramentas.setWindowTitle("Lixo na Cidade")
-        # self.ferramentas.setFixedSize(400, 400)
         self.ferramentas.setStyleSheet(theme)
 
         self.mainpage()
