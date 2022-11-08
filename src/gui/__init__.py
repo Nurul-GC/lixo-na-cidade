@@ -21,11 +21,55 @@ class LixoNaCidade:
 
         self.app = QApplication(argv)
         self.ferramentas = QWidget()
-        self.ferramentas.setWindowIcon(QIcon("favicon/favicon-512x512.png"))
+        self.ferramentas.setWindowIcon(QIcon("../favicon/favicon-512x512.png"))
         self.ferramentas.setWindowTitle("Lixo na Cidade")
         self.ferramentas.setStyleSheet(theme)
 
+        menu = QMenuBar(self.ferramentas)
+        sobre = menu.addAction("Sobre")
+        sobre.triggered.connect(self.about)
+
         self.mainpage()
+
+    def about(self):
+        QMessageBox.information(QWidget=self.ferramentas, p_str="Sobre o Programa", p_str_1="""
+<small><h2>Trabalho para cadeira de Metodologia Investigação Científica</h2><hr>
+<p>
+<h2>Problema Investigação</h2>
+<li>Lixo em Angola;</li>
+</p>
+
+<p>
+<h2>Descrição</h2>
+<li>Os amontoados de lixo nos centros urbanos e rurais como consequência de situações 
+potencialmente milindrosas para a saúde e desenvolvimento social da comunidade;</li>
+</p> 
+
+<p>
+<h2>Objecto de Estudo</h2>
+<li>O problema em si (O lixo);</li>
+</p>
+
+<p>
+<h2>Campo de Estudo</h2>
+<li>Os centros urbanos e rurais;</li>
+</p>
+
+<p>
+<h2>Perguntas de Investigação</h2>
+<li>Como terminar com os amontoados de lixo nos centros urbanos e rurais?</li>
+<li>Porquê o fluxo de lixo nos centros urbanos e rurais continuam aumentando?</li>
+<li>Como a população está concencializada sobre a situação?</li>
+<li>Qual o papel do cidadão na preservação do meio ambiente?</li>
+<li>Como usar a tecnologia para resolver este problema?</li>
+</p>
+
+<p>
+<h2>Objectivos</h2> <li>Achar uma solução eficaz para o problema;</li> <li>Usar meios tecnológicos para 
+resolução do problema;</li> <li>Concencializar a comunidade sobre a praticabilidade e eficácia das 
+tecnologias na resolução de problemas quotidianos (semelhantes);</li>
+</p></small>
+""")
 
     def mainpage(self):
 
@@ -171,9 +215,8 @@ class LixoNaCidade:
         self.ferramentas.setLayout(layout)
 
 
-
 if __name__ == '__main__':
-    theme = open("./theme/lixonacidade.qss").read().strip()
+    theme = open("../theme/lixonacidade.qss").read().strip()
     ngc = LixoNaCidade()
-    ngc.ferramentas.show()
+    ngc.ferramentas.showMaximized()
     ngc.app.exec()
