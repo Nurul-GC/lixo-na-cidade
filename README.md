@@ -1,6 +1,6 @@
 # Trabalho para cadeira de Metodologia Investigação Científica
 
-![logo](favicon/favicon-192x192.png)
+![logo](src/favicon/favicon-192x192.png)
 
 ### Problema Investigação:
 
