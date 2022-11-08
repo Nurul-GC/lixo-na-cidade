@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../theme/lixonacidade.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" sizes="32x32" href="../favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="16x16" href="../favicon/favicon-16x16.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+
+    <title>Lixo Na Cidade</title>
+</head>
+<body>
+    <script src="../js/index.js" defer></script>
+    <h1>Trabalho para cadeira de Metodologia Investigação Científica</h1>
+
+    <div id="demo" onloadeddata="carregarpostos()" onmouseenter="carregarpostos()">
+        <h2>Demonstração do software (LIVE)</h2>
+        <div class="postos"><p id="posto1">Posto Mapunda<br>0kg</p></div><br>
+        <div class="postos"><p id="posto2">Posto Lucrecia<br>0kg</p></div><br>
+        <div class="postos"><p id="posto3">Posto Tchioco<br>0kg</p></div><br>
+        <div class="postos"><p id="posto4">Posto Minhota<br>0kg</p></div><br>
+        <div class="postos"><p id="posto5">Posto Arco Iris<br>0kg</p></div><br>
+        <div class="postos"><p id="posto6">Posto Lage<br>0kg</p></div><br>
+        <div class="postos"><p id="posto7">Posto Laureanos<br>0kg</p></div><br>
+        <div class="postos"><p id="posto8">Posto Bairro Comercial<br>0kg</p></div><br>
+        <div align="center">
+            <button type="button" onclick="carregarpostos()">Carregar Postos</button>
+            <button type="button" onclick="esvaziarpostos()">Recolha Geral</button>
+        </div>
+    </div>
+
+    <footer><small>&copy; 2022 Nurul-GC</small></footer>
+</body>
+</html>
