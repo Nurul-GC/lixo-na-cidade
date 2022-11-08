@@ -1,0 +1,63 @@
+body{
+  font-family: "cambria";
+  background-color: AntiqueWhite;
+  color: black;
+}
+#demo{
+  background-color: #EDB;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  color: black;
+  padding: 10px;
+  margin: auto;
+}
+.postos{
+  border-radius: 10px;
+  background-color: white;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  color: black;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+#titulo{
+  border-radius: 10px;
+  background-color: white;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  color: black;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+img{
+  height: 192px;
+  width: 192px;
+  border-radius: 20px;
+}
+img:hover{
+  height: 190px;
+  width: 190px;
+  border-radius: 20px;
+}
+button{
+  background-color: #EDB;
+  color: black;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+}
+button:hover{
+  background-color: white;
+}
+footer{
+  text-align:center;
+  margin: 20px;
+}
