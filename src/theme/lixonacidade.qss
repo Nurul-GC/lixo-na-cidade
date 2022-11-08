@@ -1,9 +1,9 @@
-QWidget{
+QWidget, QWebView{
   font-family: "cambria";
-  background-color: "#EDB";
+  background-color: "white";
   color: black;
 }
-QFrame{
+/*QFrame{
   border-radius: 10px;
   background-color: "white";
   border-width: 1px;
@@ -12,7 +12,7 @@ QFrame{
   color: black;
   padding: 5px;
   margin: auto;
-}
+}*/
 QPushButton{
   background-color: white;
   color: black;
@@ -31,11 +31,11 @@ QPushButton:hover{
   border-style: solid;
   padding: 5px;
 }
-QMenuBar::item:selected {
-  background-color: white;
+QMenuBar::item:selected{
+  background-color: "#EDB";
   color: black;
 }
 QMenu::item:selected{
-  background-color: white;
+  background-color: "#EDB";
   color: black;
 }
